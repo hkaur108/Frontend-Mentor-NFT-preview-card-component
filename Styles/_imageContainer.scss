@@ -1,0 +1,93 @@
+
+.container{
+    width:100%;
+    max-width: 280px;
+    margin: 2em auto;
+    background-color: $cardColor;
+    color:$cardTextColor;
+    border-radius: 10px;
+    padding:1rem;
+    .image-container{
+        width:100%;
+        border-radius: 10px;
+        position: relative;
+        img{
+            width:100%;
+            display: block;
+            margin:auto;
+            border-radius: 10px;
+            &:hover{
+                cursor: pointer;
+                color:$cyan;
+               
+            }
+        }
+        .view-icon{
+            display: none;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: hsl(178, 100%, 50%,0.5);
+            z-index: 2;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+            img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:20%;
+                position: relative;
+                top:40%;
+                margin:auto;
+                text-align: center;
+                transition: all 0.3s ease-in;
+
+            }
+          }
+    }
+    .content-container{
+        width:100%;
+        margin:1em auto;
+    }
+    .desc{
+        font-size: .90rem;
+        margin:1rem auto;
+        color:$softBlue;
+        line-height: 1.25rem;
+    }
+    .rate{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        font-size: .5rem;
+        margin:1em auto;
+        .eth{
+            color:cyan;
+        }
+    }
+}
+.hr{
+    width:100%;
+    height:.5px;
+    margin:.8em auto;
+    display:block;
+    background-color:$lineColor;
+}
+
+h3:hover{
+    cursor:pointer;
+    color:$cyan;
+    transition: all 0.1s ease-in;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .85rem;
+    figcaption{
+        padding-left:5px;
+    }
+}
